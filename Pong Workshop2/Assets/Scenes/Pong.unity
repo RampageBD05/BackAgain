@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 629749419}
   - component: {fileID: 629749418}
   - component: {fileID: 629749422}
+  - component: {fileID: 629749423}
   m_Layer: 0
   m_Name: 'ComPaddle '
   m_TagString: Untagged
@@ -388,6 +389,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   ball: {fileID: 2065151384}
+--- !u!114 &629749423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629749417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb283ae5f0ccae41845c0208ed77bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  ball: {fileID: 0}
 --- !u!1 &807400475
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,11 +447,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d1b47c08b153942ad6212ef669858b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
-  playerPaddle: {fileID: 0}
+  ball: {fileID: 2065151385}
+  playerPaddle: {fileID: 2084238602}
   playerScore: 0
   playerScoreText: {fileID: 0}
-  computerPaddle: {fileID: 0}
+  computerPaddle: {fileID: 629749422}
   computerScore: 0
   computerScoreText: {fileID: 0}
 --- !u!1 &905706799
@@ -593,6 +608,7 @@ GameObject:
   - component: {fileID: 2065151381}
   - component: {fileID: 2065151383}
   - component: {fileID: 2065151384}
+  - component: {fileID: 2065151385}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -714,6 +730,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2065151385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065151380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4fa381365ecd44d89411942a8c9e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BallSpeed: 0
 --- !u!1 &2084238597
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +756,7 @@ GameObject:
   - component: {fileID: 2084238601}
   - component: {fileID: 2084238600}
   - component: {fileID: 2084238602}
+  - component: {fileID: 2084238603}
   m_Layer: 0
   m_Name: PlayerPaddle
   m_TagString: Untagged
@@ -861,3 +891,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &2084238603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084238597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3d90a49da780040a0c86976a2710f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
